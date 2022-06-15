@@ -1,9 +1,19 @@
-# Predictive maintenance on synthetic dataset
+# Decision Trees and Random Forest in Predictive Maintenance Tasks
 
-Dataset is downloaded from
-<https://archive-beta.ics.uci.edu/ml/datasets/ai4i+2020+predictive+maintenance+dataset>
+This repository shows the usage of Decision Trees and Random Forests in the prediction of a machine / process failures. The data preprocessing, EDA and modelling is done in multiple notebooks, which can be looked at here:
 
-## Data Set Information
+1. [Dataset preprocessing and EDA](https://nbviewer.org/github/hfrechen/predictive_maintenance/blob/main/notebooks/EDA.ipynb)
+2. [Binary classification of machine failures - Decision Trees](https://nbviewer.org/github/hfrechen/predictive_maintenance/blob/main/notebooks/Modelling_Decision_Trees.ipynb)
+3. [Binary classification of machine failures - Random Forest](https://nbviewer.org/github/hfrechen/predictive_maintenance/blob/main/notebooks/Modelling_Random_Forest.ipynb)
+
+To run the notebooks install conda and create an environment:
+> conda env create -f environment.yml
+> 
+> conda activate predictive_maintenance
+
+## Data Set Description
+
+Dataset is downloaded from the [UCI Machine Learning Repository](https://archive-beta.ics.uci.edu/ml/datasets/ai4i+2020+predictive+maintenance+dataset) and the following description is taken from the author's dataset description.
 
 Since real predictive maintenance datasets are generally difficult to obtain and in particular difficult to publish, we present and provide a synthetic dataset that reflects real predictive maintenance encountered in industry to the best of our knowledge.
 
@@ -31,4 +41,6 @@ If at least one of the above failure modes is true, the process fails and the 'm
 
 ## Relevant Papers
 
-Stephan Matzka, 'Explainable Artificial Intelligence for Predictive Maintenance Applications', Third International Conference on Artificial Intelligence for Industries (AI4I 2020), 2020 (in press)
+[Stephan Matzka, 'Explainable Artificial Intelligence for Predictive Maintenance Applications', Third International Conference on Artificial Intelligence for Industries (AI4I 2020)](https://ieeexplore.ieee.org/document/9253083)
+
+[https://doi.org/10.1109/AI4I49448.2020.00023](https://doi.org/10.1109/AI4I49448.2020.00023)
